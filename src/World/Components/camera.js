@@ -17,7 +17,7 @@ function create_camera(){
 }
 
 function create_controls(camera,renderer){
-    const control = new OrbitControls(camera, renderer)
+    const control = new OrbitControls(camera, renderer.domElement)
     return control
 
 }

@@ -26,7 +26,7 @@ class World {
         this.renderer = create_renderer()
         container.append(this.renderer.domElement)
 
-        // this.control= create_controls(this.camera,this.renderer)
+        this.control= create_controls(this.camera,this.renderer)
 
         
         this.resizer = new Resizer(container, this.camera, this.renderer)
@@ -42,7 +42,7 @@ class World {
         this.cube.rotation.y += 0.01
         this.cube.rotation.z += 0.01
 
-        // this.control.update()
+        this.control.update()
         this.renderer.render(this.scene, this.camera)
     }
     
